@@ -1,3 +1,11 @@
+sudo yum update
+#sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+#sudo yum install python3 already in AWS AMI
+sudo yum install -y python3-pip
+sudo yum install -y git
+sudo yum install -y nodejs
+
+# setup pwd for new ec2: sudo passwd ec2-user
 # !pip install --upgrade git+https://github.com/huggingface/diffusers.git
 !pip install diffusers==0.14.0
 # !pip install --upgrade git+https://github.com/huggingface/transformers/
@@ -7,8 +15,8 @@
 !pip install ftfy
 !pip install translators
 !pip install gradio==3.16.0
-!git clone https://github.com/qunash/stable-diffusion-2-gui
-%cd stable-diffusion-2-gui
+!git clone https://github.com/Work-with-Nook/nook-sd-midjourney-v4.git
+%cd nook-sd-midjourney-v4
 
 #@markdown ### ⬅️ Run this cell
 #@markdown ---

@@ -213,5 +213,5 @@ with gr.Blocks(css="style.css", title="AI Nook") as demo:
     </div>
     """)
 
-# demo.queue(concurrency_count=5)
+demo.queue(concurrency_count=5)
 demo.launch(debug=False, share=False, height=768, favicon_path="favicon.svg")

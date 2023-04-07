@@ -22,3 +22,6 @@ a{
 #gallery{
     min-height:20rem
 }
+footer {
+    visibility: hidden;
+}

@@ -50,7 +50,7 @@ def update_state_info(old_state):
     if state:
         visible = True
     if state and state != old_state:
-        return gr.update(value=state, visible=visible)
+        return gr.update(value=state, visible=False)
 
 
 def set_mem_optimizations(pipe):
@@ -214,4 +214,4 @@ with gr.Blocks(css="style.css", title="AI Nook") as demo:
     """)
 
 demo.queue(concurrency_count=5)
-demo.launch(debug=False, share=False, height=768, favicon_path="favicon.svg")
+demo.launch(debug=False, share=False, height=768, favicon_path="favicon.svg", server_name="0.0.0.0")
